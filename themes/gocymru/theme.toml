@@ -1,0 +1,52 @@
+theme = "gocymru"
+
+title = "Golang Cymru"
+
+[blackfriday]
+  extensions = ["hardLineBreak"]
+
+[params]
+  bio = "All about us!"
+  meetupInfo = "Some lovely stuff about the meet ups"
+  logo = "gopher-dragon.svg"
+  copyright = "&copy; 2019 Golang Cymru\n\nWelsh Dragon Gopher curtesy of [Ashley McNamara](https://github.com/ashleymcnamara/gophers) used with kind permission"
+
+  [[params.social]]
+      name = "Github"
+      icon = "fab fa-github"
+      weight = 1
+      url = "https://github.com/golang-cymru/"
+  [[params.social]]
+      name = "Meetup"
+      icon = "fab fa-meetup"
+      weight = 2
+      url = "https://www.meetup.com/Cardiff-Go-Meetup/"
+  [[params.social]]
+      name = "Twitter"
+      icon = "fab fa-twitter"
+      weight = 3
+      url = "https://twitter.com/cdfgolang/"
+  [[params.social]]
+      name = "Slack"
+      icon = "fab fa-slack"
+      weight = 4
+      url = "https://gophers.slack.com/messages/cymru"
+
+  [[params.hacks]]
+      name = "Simple API"
+      url = "https://github.com/golang-cymru/cardiff-meetup-code/tree/master/2016-11-simple-api"
+      weight = 1
+  [[params.hacks]]
+      name = "LCD Digits"
+      url = "https://github.com/golang-cymru/cardiff-meetup-code/tree/master/2017-01-tdd-lcd-digits"
+      weight = 1
+  [[params.hacks]]
+      name = "GRPC"
+      url = "https://github.com/golang-cymru/cardiff-meetup-code/tree/master/2017-07-grpc"
+      weight = 1
+
+  [[params.projects]]
+      name = "Go Who"
+      url = "https://github.com/golang-cymru/cardiff-meetup-code/tree/master/2019-03-07-go-who-proto"
+      weight = 1
+

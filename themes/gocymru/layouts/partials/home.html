@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="row">
+
+      <div class="col-md-4 d-none d-md-block d-l-block d-xl-block">
+        <div class="row">
+          <div class="col-12 text-center">
+            <img src="img/{{ .Site.Params.logo }}" id="main-logo" />
+          </div>
+        </div>
+        <div class="row" id="social-links">
+          <div class="col-12 text-center p-3">
+            {{ with .Site.Params.social }}
+            <ul class="list-inline">
+              {{ range sort .}}
+              <li class="list-inline-item">
+                <a href="{{ .url }}" aria-label="{{ .name }}">
+                  <i class="{{ .icon }}" aria-hidden="true"></i>
+                </a>
+              </li>
+              {{ end }}
+            </ul>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-8 col-xs-12">
+        <div>
+            <h1>About us</h1>
+            <p>{{ .Site.Params.bio | markdownify }}</p>
+        </div>
+        <div id="secondary-social-display">
+          {{ with .Site.Params.social }}
+          <ul class="list-inline">
+            {{ range sort .}}
+            <li class="list-inline-item">
+              <a href="{{ .url }}" aria-label="{{ .name }}">
+                <i class="{{ .icon }}" aria-hidden="true"></i>
+              </a>
+            </li>
+            {{ end }}
+          </ul>
+          {{ end }}
+        </div>
+      </div>
+
+  </div>
+</div>

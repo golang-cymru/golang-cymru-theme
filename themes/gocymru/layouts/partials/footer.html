@@ -1,0 +1,47 @@
+<footer class="pt-5 my-md-5 pt-md-5 border-top">
+    <div class="row">
+
+      <div class="col-6 col-md">
+        <img class="mb-2" src="/img/gopher-dragon.svg" alt="" width="24" height="24">
+        <small class="d-block mb-3 text-muted">{{ .Site.Params.copyright | markdownify }}</small>
+      </div>
+
+      <div class="col-6 col-md">
+        <h5>Hack Nights</h5>
+        <small class="d-block mb-3 text-muted">Example code from some previous hack nights that we've held</small>
+        {{ with .Site.Params.hacks }}
+        <ul class="list-unstyled text-small">
+          {{ range sort .}}
+          <li><a class="text-muted" href="{{ .url }}"><i class="fa fa-code" aria-hidden="true"></i> {{ .name }}</a></li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      </div>
+
+      <div class="col-6 col-md">
+        <h5>Projects</h5>
+        {{ with .Site.Params.projects }}
+        <ul class="list-unstyled text-small">
+          {{ range sort .}}
+          <li><a class="text-muted" href="{{ .url }}"><i class="fa fa-code" aria-hidden="true"></i> {{ .name }}</a></li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      </div>
+
+      <div class="col-6 col-md">
+        <h5>Contact</h5>
+        {{ with .Site.Params.social }}
+        <ul class="list-unstyled text-small">
+          {{ range sort .}}
+          <li><a class="text-muted" href="{{ .url }}"><i class="{{ .icon }}" aria-hidden="true"></i> {{ .name }}</a></li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      </div>
+
+    </div>
+  </footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha256-CjSoeELFOcH0/uxWu6mC/Vlrc1AARqbm/jiiImDGV3s=" crossorigin="anonymous"></script>

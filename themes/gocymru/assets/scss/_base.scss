@@ -1,0 +1,81 @@
+h1,h2,h3,h4,h5,h6 {
+  color: $headerColour;
+}
+
+
+h1 {
+  @media (max-width: 767.98px) {
+    font-size: 1.5em;
+  }
+}
+
+body {
+  background-color: $backgroundColour;
+  color: $textColour;
+
+  margin: 0px auto 0px auto;
+}
+
+a {
+  color: inherit;
+}
+
+p {
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
+}
+
+a:hover {
+  color: red;
+}
+
+br {
+  line-height: 2em;
+}
+
+#social-links {
+   .fab {
+    color: inherit;
+    font-size: 3em;
+
+    @media (max-width: 991.98px) {
+      font-size: 2em;
+    }
+  }
+}
+
+#main-logo {
+  @media (max-width: 767.98px) {
+    width: 50%;
+  }
+}
+
+#header-logo {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+
+.card {
+  &-header,&-body{
+    background-color: $backgroundLighterColour;
+  }
+}
+
+footer {
+  .fab {
+    font-size: 20px;
+  }
+}
+
+#secondary-social-display {
+  display: none;
+  @media (max-width: 767.98px) {
+    display: block;
+    .fab {
+      font-size: 2em;
+    }
+  }
+}
